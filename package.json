@@ -1,0 +1,19 @@
+{
+  "name": "hyh-blog",
+  "version": "1.0.0",
+  "description": "记录技术，记录生活",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/theme-blog": "^2.3.3",
+    "vuepress": "^1.9.7"
+  },
+  "dependencies": {
+    "vuepress-theme-hope": "^1.30.0",
+    "vuepress-theme-vdoing": "^1.12.8"
+  }
+}

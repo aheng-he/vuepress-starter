@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <script>
+        let { reactive, readonly , ref, shallowReactive} = Vue;
+        // const obj = reactive({count: 0, name: 'hyh', info: { age: 25 }})
+
+        // // const count = reactive(1)
+
+        // console.log(obj)
+        // console.log('obj.count :>> ', obj.count);
+
+        // const obj = {name: 'hyh', info: { age: 26 }}
+        // const reactObj = reactive(obj)
+        // const readonlyObj = readonly(obj)
+
+        // 基于Proxy的代理
+
+        // 基于类的代理
+        // const refCount = ref({a:1, b:2})
+        // console.log(reactObj);
+        // console.log(readonlyObj);
+        // console.log(refCount);
+        // const state = shallowReactive({
+        //     count: ref(0)
+        // })
+        // console.log(state);
+
+        // const arr = reactive([1, 2, 4])
+        // console.log('arr.includes(1) :>> ', arr.includes(1));
+        let obj = {a: 1};
+        let reactObj = reactive(obj)
+        
+        const arr1 = reactive([obj])
+        console.log('arr1.includes(obj) :>> ', arr1.includes(reactObj));
+    </script>
+    
+</body>
+</html>
